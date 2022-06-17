@@ -1,14 +1,19 @@
 var currentDateEl = $('#current-date');
+var saveButtonEl = $('save-btn');
 
+//display date function
 function displayDate() {
-    var rightNow = moment().format('dddd: MMM DD, YYYY');
+    var rightNow = moment().format('dddd: MMM Do, YYYY');
  currentDateEl.text(rightNow);
 }
 
-function loadTasks() {
-    // check if localStorage has any tasks
-    // if not then return
-    if (localStorage.getItem("tasks") == null) return;
-}
+//localstorage for task
+
+
+//save button function
+saveButtonEl.on('click', function () {
+    var saveTask = ("");
+});
+
 
 setInterval(displayDate,1000);
