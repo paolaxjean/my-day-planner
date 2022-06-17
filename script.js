@@ -1,9 +1,10 @@
-var timeDisplayEl = $('#time-display');
+var currentDateEl = $('#current-date');
 
-function displayTime() {
+function displayDate() {
     var rightNow = moment().format('MMM DD, YYYY [at] hh:mm:ss a');
-    timeDisplayEl.text(rightNow);
+ currentDateEl.text(rightNow);
   }
 
-  
-setInterval(displayTime,1000);
+
+setInterval(displayDate,1000);
+
